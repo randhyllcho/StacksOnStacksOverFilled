@@ -17,6 +17,8 @@
 		32B49FEE1A9290A800630996 /* StacksOnStackOverFilledTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B49FED1A9290A800630996 /* StacksOnStackOverFilledTests.m */; };
 		32B49FFC1A92957B00630996 /* BurgerContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B49FFB1A92957B00630996 /* BurgerContainerViewController.m */; };
 		32B4A0001A9297F800630996 /* icon cheeseburger.png in Resources */ = {isa = PBXBuildFile; fileRef = 32B49FFF1A9297F800630996 /* icon cheeseburger.png */; };
+		32B4A0031A92AD1800630996 /* MenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B4A0021A92AD1800630996 /* MenuTableViewController.m */; };
+		32B4A0061A92AD5500630996 /* WebOAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B4A0051A92AD5500630996 /* WebOAuthViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,10 @@
 		32B49FFA1A92957B00630996 /* BurgerContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BurgerContainerViewController.h; path = ../BurgerContainerViewController.h; sourceTree = "<group>"; };
 		32B49FFB1A92957B00630996 /* BurgerContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BurgerContainerViewController.m; path = ../BurgerContainerViewController.m; sourceTree = "<group>"; };
 		32B49FFF1A9297F800630996 /* icon cheeseburger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon cheeseburger.png"; sourceTree = "<group>"; };
+		32B4A0011A92AD1800630996 /* MenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTableViewController.h; sourceTree = "<group>"; };
+		32B4A0021A92AD1800630996 /* MenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewController.m; sourceTree = "<group>"; };
+		32B4A0041A92AD5500630996 /* WebOAuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebOAuthViewController.h; sourceTree = "<group>"; };
+		32B4A0051A92AD5500630996 /* WebOAuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebOAuthViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,10 @@
 				32B49FD91A9290A800630996 /* ViewController.m */,
 				32B49FFA1A92957B00630996 /* BurgerContainerViewController.h */,
 				32B49FFB1A92957B00630996 /* BurgerContainerViewController.m */,
+				32B4A0011A92AD1800630996 /* MenuTableViewController.h */,
+				32B4A0021A92AD1800630996 /* MenuTableViewController.m */,
+				32B4A0041A92AD5500630996 /* WebOAuthViewController.h */,
+				32B4A0051A92AD5500630996 /* WebOAuthViewController.m */,
 				32B49FDB1A9290A800630996 /* Main.storyboard */,
 				32B49FDE1A9290A800630996 /* Images.xcassets */,
 				32B49FFF1A9297F800630996 /* icon cheeseburger.png */,
@@ -231,10 +241,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32B4A0061A92AD5500630996 /* WebOAuthViewController.m in Sources */,
 				32B49FD41A9290A800630996 /* AppDelegate.m in Sources */,
 				32B49FFC1A92957B00630996 /* BurgerContainerViewController.m in Sources */,
 				32B49FD71A9290A800630996 /* StacksOnStackOverFilled.xcdatamodeld in Sources */,
 				32B49FDA1A9290A800630996 /* ViewController.m in Sources */,
+				32B4A0031A92AD1800630996 /* MenuTableViewController.m in Sources */,
 				32B49FD11A9290A800630996 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
