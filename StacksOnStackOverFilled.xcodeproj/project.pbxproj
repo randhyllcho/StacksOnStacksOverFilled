@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		324601A71A93EEFB003BC630 /* Questions.m in Sources */ = {isa = PBXBuildFile; fileRef = 324601A61A93EEFB003BC630 /* Questions.m */; };
+		324601AA1A93F1CA003BC630 /* QuestionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 324601A91A93F1CA003BC630 /* QuestionCell.m */; };
 		32B49FD11A9290A800630996 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B49FD01A9290A800630996 /* main.m */; };
 		32B49FD41A9290A800630996 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B49FD31A9290A800630996 /* AppDelegate.m */; };
 		32B49FD71A9290A800630996 /* StacksOnStackOverFilled.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 32B49FD51A9290A800630996 /* StacksOnStackOverFilled.xcdatamodeld */; };
@@ -19,6 +21,8 @@
 		32B4A0001A9297F800630996 /* icon cheeseburger.png in Resources */ = {isa = PBXBuildFile; fileRef = 32B49FFF1A9297F800630996 /* icon cheeseburger.png */; };
 		32B4A0031A92AD1800630996 /* MenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B4A0021A92AD1800630996 /* MenuTableViewController.m */; };
 		32B4A0061A92AD5500630996 /* WebOAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B4A0051A92AD5500630996 /* WebOAuthViewController.m */; };
+		32B4A0091A93E2FD00630996 /* SearchQuestionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B4A0081A93E2FD00630996 /* SearchQuestionsViewController.m */; };
+		32B4A00C1A93E35200630996 /* StackOverflowService.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B4A00B1A93E35200630996 /* StackOverflowService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		324601A51A93EEFB003BC630 /* Questions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Questions.h; sourceTree = "<group>"; };
+		324601A61A93EEFB003BC630 /* Questions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Questions.m; sourceTree = "<group>"; };
+		324601A81A93F1CA003BC630 /* QuestionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionCell.h; sourceTree = "<group>"; };
+		324601A91A93F1CA003BC630 /* QuestionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionCell.m; sourceTree = "<group>"; };
 		32B49FCB1A9290A800630996 /* StacksOnStackOverFilled.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StacksOnStackOverFilled.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32B49FCF1A9290A800630996 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		32B49FD01A9290A800630996 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -53,6 +61,10 @@
 		32B4A0021A92AD1800630996 /* MenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewController.m; sourceTree = "<group>"; };
 		32B4A0041A92AD5500630996 /* WebOAuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebOAuthViewController.h; sourceTree = "<group>"; };
 		32B4A0051A92AD5500630996 /* WebOAuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebOAuthViewController.m; sourceTree = "<group>"; };
+		32B4A0071A93E2FD00630996 /* SearchQuestionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchQuestionsViewController.h; sourceTree = "<group>"; };
+		32B4A0081A93E2FD00630996 /* SearchQuestionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchQuestionsViewController.m; sourceTree = "<group>"; };
+		32B4A00A1A93E35200630996 /* StackOverflowService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackOverflowService.h; sourceTree = "<group>"; };
+		32B4A00B1A93E35200630996 /* StackOverflowService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackOverflowService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +117,14 @@
 				32B4A0041A92AD5500630996 /* WebOAuthViewController.h */,
 				32B4A0051A92AD5500630996 /* WebOAuthViewController.m */,
 				32B49FDB1A9290A800630996 /* Main.storyboard */,
+				32B4A00A1A93E35200630996 /* StackOverflowService.h */,
+				32B4A00B1A93E35200630996 /* StackOverflowService.m */,
+				32B4A0071A93E2FD00630996 /* SearchQuestionsViewController.h */,
+				32B4A0081A93E2FD00630996 /* SearchQuestionsViewController.m */,
+				324601A81A93F1CA003BC630 /* QuestionCell.h */,
+				324601A91A93F1CA003BC630 /* QuestionCell.m */,
+				324601A51A93EEFB003BC630 /* Questions.h */,
+				324601A61A93EEFB003BC630 /* Questions.m */,
 				32B49FDE1A9290A800630996 /* Images.xcassets */,
 				32B49FFF1A9297F800630996 /* icon cheeseburger.png */,
 				32B49FE01A9290A800630996 /* LaunchScreen.xib */,
@@ -243,11 +263,15 @@
 			files = (
 				32B4A0061A92AD5500630996 /* WebOAuthViewController.m in Sources */,
 				32B49FD41A9290A800630996 /* AppDelegate.m in Sources */,
+				32B4A0091A93E2FD00630996 /* SearchQuestionsViewController.m in Sources */,
 				32B49FFC1A92957B00630996 /* BurgerContainerViewController.m in Sources */,
 				32B49FD71A9290A800630996 /* StacksOnStackOverFilled.xcdatamodeld in Sources */,
 				32B49FDA1A9290A800630996 /* ViewController.m in Sources */,
+				324601AA1A93F1CA003BC630 /* QuestionCell.m in Sources */,
 				32B4A0031A92AD1800630996 /* MenuTableViewController.m in Sources */,
+				324601A71A93EEFB003BC630 /* Questions.m in Sources */,
 				32B49FD11A9290A800630996 /* main.m in Sources */,
+				32B4A00C1A93E35200630996 /* StackOverflowService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +464,7 @@
 				32B49FF31A9290A800630996 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		32B49FF41A9290A800630996 /* Build configuration list for PBXNativeTarget "StacksOnStackOverFilledTests" */ = {
 			isa = XCConfigurationList;
@@ -448,6 +473,7 @@
 				32B49FF61A9290A800630996 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

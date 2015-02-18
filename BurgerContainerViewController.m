@@ -47,7 +47,7 @@
   __weak BurgerContainerViewController * weakSelf = self;
   
   [UIView animateWithDuration:0.3 animations:^{
-    weakSelf.topViewController.view.center = CGPointMake(weakSelf.topViewController.view.center.x + 300, weakSelf.topViewController.view.center.y);
+    weakSelf.topViewController.view.center = CGPointMake(weakSelf.topViewController.view.center.x + 237, weakSelf.topViewController.view.center.y);
   } completion:^(BOOL finished) {
     [weakSelf.topViewController.view addGestureRecognizer:weakSelf.tapToClose];
   }];
