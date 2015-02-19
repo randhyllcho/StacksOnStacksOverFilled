@@ -13,8 +13,8 @@
 @interface ProfileViewController ()
 @property (assign, nonatomic) IBOutlet UILabel *userNameLabel;
 @property (assign, nonatomic) IBOutlet UIImageView *userProfileImage;
-@property (assign, nonatomic) NSArray *userInfo;
-@property (assign, nonatomic) UserProfile* myUser;
+@property (retain, nonatomic) NSArray *userInfo;
+@property (retain, nonatomic) UserProfile* myUser;
 
 @end
 
@@ -32,6 +32,12 @@
       self.userProfileImage.image = image;
     }];
   }];
+}
+
+-(void)dealloc {
+  [self.myUser release];
+  [self.userInfo release];
+  [super dealloc];
 }
 
 @end
