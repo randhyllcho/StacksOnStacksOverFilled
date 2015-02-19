@@ -14,5 +14,7 @@
 
 -(void)fetchQuestionsWithSearchTerm:(NSString *)searchTerm completionHandler:(void (^)(NSArray *results, NSString *error))completionHandler;
 
+-(void)fetchUserInfo:(void (^) (NSArray *results, NSString *error))completionHandler;
+
 -(void)fetchUserImage:(NSString *)avatarURL completionHandler:(void (^) (UIImage *image))completionHandler;
 @end

@@ -8,6 +8,7 @@
 
 #import "StackOverflowService.h"
 #import "Questions.h"
+#import "UserProfile.h"
 
 @implementation StackOverflowService
 
@@ -48,8 +49,58 @@
       
       switch (statusCode) {
         case 200 ... 299:{
-          NSLog(@"%ld", (long)statusCode);
-          NSArray *results =[Questions questionsFromJSON:data];
+          //NSLog(@"%ld", (long)statusCode);
+          NSArray *results = [Questions questionsFromJSON:data];
+          dispatch_async(dispatch_get_main_queue(), ^{
+            if (results) {
+              completionHandler(results, nil);
+            } else {
+              completionHandler(nil, @"search could not be completed");
+            }
+          });
+        }
+          break;
+          
+        default:
+          //NSLog(@"%ld", (long)statusCode);
+          break;
+      }
+    }
+  }];
+  [dataTask resume];
+}
+
+-(void)fetchUserInfo:(void (^) (NSArray *results, NSString *error))completionHandler{
+  
+  NSString *urlString = @"https://api.stackexchange.com/2.2/";
+  urlString = [urlString stringByAppendingString:@"me?order=desc&sort=reputation&site=stackoverflow"];
+  NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+  NSString *token = [defaults objectForKey:@"token"];
+  if (token) {
+    urlString = [urlString stringByAppendingString:@"&access_token="];
+    urlString = [urlString stringByAppendingString:token];
+    urlString = [urlString stringByAppendingString:@"&key=l1INaEowNoCUa5VUm9nmog(("];
+  }
+  NSURL *url = [NSURL URLWithString:urlString];
+  //NSLog(@"%@", url);
+  
+  NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url];
+  request.HTTPMethod = @"GET";
+  
+  NSURLSession *session = [NSURLSession sharedSession];
+  
+  NSURLSessionTask *dataTask = [session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+    if (error) {
+      completionHandler(nil, @"Could not connect");
+    } else {
+      NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)response;
+      NSInteger statusCode = httpResponse.statusCode;
+      //NSLog(@"%@", data.description);
+      
+      switch (statusCode) {
+        case 200 ... 299:{
+
+          NSArray *results = [UserProfile userProfileFromJSON:data];
           dispatch_async(dispatch_get_main_queue(), ^{
             if (results) {
               completionHandler(results, nil);
