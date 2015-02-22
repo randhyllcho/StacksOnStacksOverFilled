@@ -42,14 +42,19 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
   QuestionCell *cell = [tableView dequeueReusableCellWithIdentifier:@"QUESTION_CELL" forIndexPath:indexPath];
-  
   Questions *questions = self.questions[indexPath.row];
   cell.titleTextView.text = questions.title;
-  if (!questions.image) {
-  [[StackOverflowService SharedService] fetchUserImage:questions.avatarURL completionHandler:^(UIImage *image) {
-    questions.image = image;
-    cell.avatarImage.image = image;
+  cell.alpha = 0;
+  [UIView animateWithDuration:1.75 animations:^{
+    cell.alpha = 1;
+      } completion:^(BOOL finished) {
   }];
+  
+  if (!questions.image) {
+    [[StackOverflowService SharedService] fetchUserImage:questions.avatarURL completionHandler:^(UIImage *image) {
+      questions.image = image;
+      cell.avatarImage.image = image;
+    }];
   } else {
     cell.avatarImage.image = questions.image;
   }
@@ -57,6 +62,4 @@
 }
 
 
-
-  
 @end

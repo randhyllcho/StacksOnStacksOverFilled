@@ -11,7 +11,8 @@
 #import "UserProfile.h"
 
 @interface ProfileViewController ()
-@property (assign, nonatomic) IBOutlet UILabel *userNameLabel;
+@property (strong, nonatomic) IBOutletCollection(UILabel) NSArray *userNameLabel;
+
 @property (assign, nonatomic) IBOutlet UIImageView *userProfileImage;
 @property (retain, nonatomic) NSArray *userInfo;
 @property (retain, nonatomic) UserProfile* myUser;
@@ -26,7 +27,10 @@
   [[StackOverflowService SharedService] fetchUserInfo:^(NSArray *results, NSString *error) {
     self.userInfo = results;
     self.myUser = self.userInfo.lastObject;
-    self.userNameLabel.text = self.myUser.name;
+    
+    for (UILabel *userName in self.userNameLabel) {
+      userName.text = self.myUser.name;
+    }
     
     [[StackOverflowService SharedService] fetchUserImage:self.myUser.avatarURL completionHandler:^(UIImage *image) {
       self.userProfileImage.image = image;

@@ -3,6 +3,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Burger Container View Controller-->
@@ -118,9 +119,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RandhyllCho" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p0w-V0-3e5">
-                                <rect key="frame" x="196" y="28" width="207.5" height="84.5"/>
-                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="25"/>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.56000000000000005" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RandhyllCho" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Xw-kX-8zd">
+                                <rect key="frame" x="325" y="505" width="100" height="41"/>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="12"/>
+                                <color key="textColor" red="0.45557133840000003" green="0.4030385199" blue="0.2334933109" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RandhyllCho" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a2f-53-aGB">
+                                <rect key="frame" x="200" y="440" width="200" height="81.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="ZX9-Ty-CEB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="24"/>
+                                <color key="textColor" red="0.45557133840000003" green="0.4030385199" blue="0.2334933109" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.68000000000000005" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RandhyllCho" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eKh-sB-rBG">
+                                <rect key="frame" x="262" y="475" width="141.5" height="57.5"/>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="17"/>
                                 <color key="textColor" red="0.45557133840000003" green="0.4030385199" blue="0.2334933109" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -131,25 +147,33 @@
                                     <constraint firstAttribute="width" constant="240" id="kfi-m9-RR7"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RandhyllCho" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cNL-yd-5mk">
-                                <rect key="frame" x="196.5" y="406.5" width="207.5" height="84.5"/>
-                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="25"/>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.14999999999999999" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RandhyllCho" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75000000000000022" translatesAutoresizingMaskIntoConstraints="NO" id="NWV-Ep-asO">
+                                <rect key="frame" x="16" y="97" width="509.5" height="169"/>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="50"/>
                                 <color key="textColor" red="0.45557133840000003" green="0.4030385199" blue="0.2334933109" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.98039215690000003" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="mPv-sC-bya" firstAttribute="top" secondItem="cNL-yd-5mk" secondAttribute="bottom" constant="109" id="AKu-Ox-Ok9"/>
+                            <constraint firstItem="9Xw-kX-8zd" firstAttribute="top" secondItem="xeY-Od-NX2" secondAttribute="bottom" constant="145" id="1fT-u5-Ur3"/>
                             <constraint firstAttribute="centerX" secondItem="xeY-Od-NX2" secondAttribute="centerX" id="L1a-FI-Ry9"/>
-                            <constraint firstItem="xeY-Od-NX2" firstAttribute="top" secondItem="p0w-V0-3e5" secondAttribute="bottom" constant="8" id="M9I-u3-ugK"/>
-                            <constraint firstItem="p0w-V0-3e5" firstAttribute="top" secondItem="Bq6-12-Ve9" secondAttribute="bottom" constant="8" id="e0i-23-y4M"/>
-                            <constraint firstAttribute="centerX" secondItem="p0w-V0-3e5" secondAttribute="centerX" id="eko-vg-Odi"/>
-                            <constraint firstAttribute="centerX" secondItem="cNL-yd-5mk" secondAttribute="centerX" id="nT8-Il-tzJ"/>
+                            <constraint firstItem="NWV-Ep-asO" firstAttribute="top" secondItem="Bq6-12-Ve9" secondAttribute="bottom" constant="77" id="PnG-IY-ZeK"/>
+                            <constraint firstAttribute="centerX" secondItem="eKh-sB-rBG" secondAttribute="centerX" multiplier="0.9" id="Uac-kB-yL6"/>
+                            <constraint firstItem="eKh-sB-rBG" firstAttribute="top" secondItem="xeY-Od-NX2" secondAttribute="bottom" constant="115" id="dXe-Er-1VY"/>
+                            <constraint firstItem="mPv-sC-bya" firstAttribute="top" secondItem="a2f-53-aGB" secondAttribute="bottom" constant="78" id="exc-XJ-IDI"/>
+                            <constraint firstAttribute="centerX" secondItem="a2f-53-aGB" secondAttribute="centerX" id="fYr-us-Fby"/>
+                            <constraint firstItem="NWV-Ep-asO" firstAttribute="leading" secondItem="Dcc-DV-awh" secondAttribute="leadingMargin" id="ff8-F0-9P2"/>
+                            <constraint firstAttribute="centerX" secondItem="9Xw-kX-8zd" secondAttribute="centerX" multiplier="0.8" id="rX4-0r-a9R"/>
+                            <constraint firstItem="a2f-53-aGB" firstAttribute="top" secondItem="xeY-Od-NX2" secondAttribute="bottom" constant="80" id="tCf-GZ-ZV9"/>
+                            <constraint firstItem="NWV-Ep-asO" firstAttribute="trailing" secondItem="Dcc-DV-awh" secondAttribute="trailingMargin" multiplier="0.9" id="xdF-DP-wJJ"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="userProfileImage" destination="xeY-Od-NX2" id="i8l-gX-zJt"/>
+                        <outletCollection property="userNameLabel" destination="eKh-sB-rBG" id="VyM-DX-l9g"/>
+                        <outletCollection property="userNameLabel" destination="9Xw-kX-8zd" id="6zz-Q2-d92"/>
+                        <outletCollection property="userNameLabel" destination="a2f-53-aGB" id="fdM-yj-XNS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Sz-ZJ-NBM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -168,13 +192,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="130" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="52l-QT-EoU">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="black" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="130" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="52l-QT-EoU">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <searchBar key="tableHeaderView" contentMode="redraw" id="fAt-5T-1As">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <color key="backgroundColor" red="0.97760811240000001" green="0.97760811240000001" blue="0.97760811240000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="separatorColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexColor" red="0.0" green="0.019482139589999999" blue="0.76162010729999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <searchBar key="tableHeaderView" contentMode="redraw" prompt="Stack Overflow" placeholder="Seach Stack Overflow" id="fAt-5T-1As">
+                                    <rect key="frame" x="0.0" y="64" width="600" height="75"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                    <textInputTraits key="textInputTraits"/>
+                                    <color key="barTintColor" red="0.42006400049999998" green="0.59349961100000004" blue="0.74112215910000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="go"/>
                                 </searchBar>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="QUESTION_CELL" rowHeight="101" id="tfV-hq-7pA" customClass="QuestionCell">
@@ -192,13 +219,14 @@
                                                 </imageView>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fhV-97-BY6">
                                                     <rect key="frame" x="86" y="8" width="506" height="84.5"/>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="backgroundColor" red="0.96204229800606056" green="0.96204229800606056" blue="0.96204229800606056" alpha="1" colorSpace="calibratedRGB"/>
                                                     <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                     <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                     <fontDescription key="fontDescription" name="Avenir-HeavyOblique" family="Avenir" pointSize="16"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
                                             </subviews>
+                                            <color key="backgroundColor" red="0.97760811240000001" green="0.97760811240000001" blue="0.97760811240000001" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstItem="0Qy-GB-6h1" firstAttribute="leading" secondItem="4uw-gC-FlG" secondAttribute="leadingMargin" id="Iyh-xr-en8"/>
                                                 <constraint firstItem="0Qy-GB-6h1" firstAttribute="leading" secondItem="4uw-gC-FlG" secondAttribute="leadingMargin" id="Khy-GE-tEw"/>
@@ -216,6 +244,7 @@
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.97760811240000001" green="0.97760811240000001" blue="0.97760811240000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <outlet property="avatarImage" destination="0Qy-GB-6h1" id="Exe-2I-VlX"/>
                                             <outlet property="titleTextView" destination="fhV-97-BY6" id="2XR-NG-HTP"/>
